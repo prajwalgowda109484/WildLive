@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+     <style>
+.nav_logo{
+    margin-left: 25px;
+    margin-top: 30px;
+    color:hsl(0 ,0%,95%);
+font-family:  "Montserrat", sans-serif; 
+ font-size: larger;
+    font-weight: bold;
+}
+.sub{
+    border: none;
+   background: transparent;
+  
+}
+h3{
+    color: black;
+}
+h1{
+    color: black;
+}
+</style>
+
+
+</head>
+<body>
+
+     <header class="header">
+    <nav class="nav container">
+<a href="#" class="nav_logo">
+    WildLive
+</a>
+<div class="nav__menu" id="nav-menu">
+    <ul class="nav__list">
+
+        <li class="nav__item">
+            <a href="index.html" class="nav__link active-link">Home
+
+            </a>
+        </li>
+
+        <li class="nav__item">
+            <a href="signup.html" class="nav__link active-link">Sign up
+
+            </a>
+        </li>
+
+
+
+        <li class="nav__item">
+            <a href="about.html" class="nav__link ">About
+                
+            </a>
+        </li>
+
+        <li class="nav__item">
+            <a href="preserve.html" class="nav__link ">Explore        
+            </a>
+        </li>
+
+         <li class="nav__item">
+            <a href="donate.html" class="nav__link ">Donate
+                
+            </a>
+        </li> 
+    </ul>
+
+
+
+
+    <!-- {{!-- /*------------ Close Button ----------*/  --> 
+    <div class="nav__close" id="nav-close">
+       <i class="ri-close-line"></i>
+   </div>
+</div> 
+
+<!---Toggle BUtton-->
+ <div class="nav__toggle" id="nav-toggle">
+   <i class="ri-menu-line"></i>
+</div> 
+</nav>
+</header>
+
+<section>
+   <img src="imgs/loginog.jpg" alt="home img" class="log__bg">   
+
+</section>
+ <section class="log" id="log">
+
+ <div class="form__log">
+      
+            <div class="form login_form">
+
+    <h1>Login </h1>
+
+    <form action="/login" method="post" >
+    <div class="input__box">
+        <input placeholder="Name" name="name" type="text">
+            <i class="ri-mail-fill email"></i>
+        </div>
+
+        <div class="input__box">
+        <input placeholder="Password" name="password" type="password">
+          <i class="ri-lock-fill password"></i>
+        </div>
+           <button class="buttonn">Login
+        
+        </button>
+<div class="login_signup">
+     <h3>Dont have a account ?</h3>
+    <a href="signup.html">Create a new account! Signup</a>
+    </div>
+    </form>
+</div>
+</div>
+ </section>
+    
+  <!-- ---------------------------FOOTER----------------------- -->
+<section>
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div>
+                    <a href="#" class="footer__logo">WildLive</a>
+                    <p class="footer__description">
+                        WILDLIVE<BR>
+                            Join us on the frontlines of conservation by becoming a volunteer.
+                    </p>
+                </div>
+                    <div class="footer__data grid">
+                        <div>
+                            <h3 class="footer__title">About</h3>
+    
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="" class="footer__link">About us </a>
+                                </li>
+    
+                                <li>
+                                    <a href="" class="footer__link">News & Blogs</a>
+                                </li>
+    
+                                <li>
+                                    <a href="" class="footer__link">Features</a>
+                                </li>
+                            </ul>
+                        </div>
+                    
+    
+                    <div>
+                        <h3 class="footer__title">Company</h3>
+    
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">FAQ's</a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="footer__link">History</a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="footer__link">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h3 class="footer__title">Contact</h3>
+    
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Call center</a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="footer__link">Support Center</a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="footer__link">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h3 class="footer__title">Support</h3>
+    
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="footer__link">Terms & Services</a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="footer__link"> Payments</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                
+                </div>
+                <div class="footer__group">
+    <div class="footer__social">
+        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+            <i class="ri-facebook-fill"></i>
+        </a>
+    
+        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+            <i class="ri-instagram-fill"></i>
+        </a>
+    
+        <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+            <i class="ri-twitter-fill"></i>
+        </a>
+    
+        <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
+            <i class="ri-youtube-fill"></i>
+        </a>
+    
+    </div>
+    
+    <span class="footer__copy">
+        &#169; Copyright WildLive. All rights reserved
+    </span>
+    
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+       </footer>
+       </section> 
+
+          <!-- ---------------Scroll up------------- -->
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+       </a>
+    
+    </main>
+
+</body>
+
+</html>

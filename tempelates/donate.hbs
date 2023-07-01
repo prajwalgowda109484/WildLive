@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.box{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   padding:25px;
+   min-height: 100vh;
+  background: black;  margin-top: 5%;
+
+}
+
+.box form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.box form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.box form .row .col{
+  flex:1 1 250px;
+}
+
+.box form .row .col .title{
+  font-size: 20px;
+  color:black;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.box form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.box form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.box form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid black;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.box form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.box form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.box form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.box form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.box form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background:#333;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.box form .submit-btn:hover{
+  background: green;
+}
+    </style>
+</head>
+<body>
+    {{!-- ----------------------HEADER--------------------------- --}}
+
+     <header class="header" id="header">
+        <nav class="nav container">
+<a href="#" class="nav__logo">
+    WildLive
+</a>
+<div class="nav__menu" id="nav-menu">
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="/home" class="nav__link">Home
+
+            </a>
+        </li>
+
+        <li class="nav__item">
+            <a href="/about" class="nav__link ">About
+                
+            </a>
+        </li>
+
+        <li class="nav__item">
+            <a href="/preserve" class="nav__link ">Explore          
+            </a>
+        </li>
+
+         <li class="nav__item">
+            <a href="/signup" class="nav__link active-link ">SignUp
+                
+            </a>
+        </li> 
+        <a href="/login"> 
+            <button  href="" class="btnLogin-popup"  >Login</button> </a>
+                
+            
+        
+    </ul>
+
+
+
+
+     <!-- /*------------ Close Button ----------*/  -->
+    <div class="nav__close" id="nav-close">
+        <i class="ri-close-line"></i>
+    </div>
+</div>
+
+<!----Toggle BUtton-->
+ <div class="nav__toggle" id="nav-toggle">
+    <i class="ri-menu-line"></i>
+</div>
+        </nav>
+    </header> 
+
+    {{!-- -----------------------Donate-------------------- --}}
+
+    <div class="box">
+
+   <form action="/donate" method="post" >
+
+        <div class="row">
+
+            <div class="col">
+
+  <h3 class="title">Donation</h3>
+
+     <div class="inputBox">
+          <span>  Name :</span>
+          <input placeholder="Name" name="name" type="text">
+     </div>
+
+     <div class="inputBox">
+          <span> Email:</span>
+          <input placeholder="Email" name="email" type="email">
+     </div>
+
+     <div class="inputBox">
+                    <span>Address :</span>
+                    <input type="text" name="address" placeholder="address">
+                </div>
+
+                     <div class="inputBox">
+                    <span>City :</span>
+                    <input type="text" name="city" placeholder="city">
+                </div>
+
+
+                 <div class="flex">
+                    <div class="inputBox">
+                        <span> Country :</span>
+                        <input type="text" name="country" placeholder="">
+                    </div>
+                    <div class="inputBox">
+                        <span>pin-code :</span>
+                        <input type="text" name="pin" placeholder="">
+                    </div>
+                </div>
+                </div>
+
+                 <div class="col">
+
+                <h3 class="title">Payment</h3>
+
+                <div class="inputBox">
+                    <span>Cards accepted :</span>
+                    <img src="imgs/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" name="card" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <span> Card number :</span>
+                    <input type="number"name="number" placeholder="">
+                </div>
+                <div class="inputBox">
+                    <span>Exp month :</span>
+                    <input type="text" name="exp" placeholder="">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Exp year :</span>
+                        <input type="number" name="year"placeholder="">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" name="cvv" placeholder="">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="Donate" class="submit-btn">
+
+    </form>
+
+</div>  
+
+</main>
+
+
+       
+    </div>
+    </div>
+    </form>
+
+
+    
+</body>
+</html>

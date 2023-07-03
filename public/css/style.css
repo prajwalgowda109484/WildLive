@@ -1101,7 +1101,7 @@ height: 40vh;
       }
 }
 
-@media screen and (max-width : 768px){
+@media screen and (min-width : 768px){
    .home__cards{
        grid-template-columns: repeat(2, 240px);
    }
